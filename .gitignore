@@ -1,0 +1,28 @@
+# Global
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Rails
+/apps/api/log/*
+/apps/api/tmp/*
+/apps/api/db/*.sqlite3
+/apps/api/db/*.sqlite3-journal
+/apps/api/.bundle
+/apps/api/vendor/bundle
+/apps/api/public/packs
+/apps/api/public/assets
+/apps/api/storage/*
+/apps/api/coverage/
+/apps/api/.byebug_history
+
+# React
+/apps/web/node_modules/
+/apps/web/dist/
+/apps/web/build/
+/apps/web/.vite/
+
+# Docker
+*.pid
+*.sock
