@@ -14,3 +14,10 @@
 #       methods: [:get, :post, :put, :patch, :delete, :options, :head]
 #   end
 # end
+
+Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins 'http://localhost:5173' # or whatever port your frontend runs on
+    resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options]
+  end
+end
